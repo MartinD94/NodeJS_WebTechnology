@@ -96,7 +96,7 @@ fieldset {
 }
 
 #btnAddUser {
-	width: 70px;
+	width: auto;
 	height: 3px;
 	margin: auto;
 	padding: 1px 10px;
