@@ -29,7 +29,7 @@ function populateTable() {
     // jQuery AJAX call for JSON
     $.getJSON( '/users/userlist', function( data ) {
 	userListData = data
-	userListData.sort();
+	userListData = userListData.sort();
         // For each item in our JSON, add a table row and cells to the content string
         $.each(userListData/*data*/, function(){
             tableContent += '<tr>';
