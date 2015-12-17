@@ -61,7 +61,7 @@ fieldset {
 	width: 70px;
 	height: 5px;
 	margin: auto;
-	/*margin-top: 2px;*/
+	margin-top: 1px;
 	padding: 2px 40px;
 	background-color:#00FF00;
 	text-align: center;
