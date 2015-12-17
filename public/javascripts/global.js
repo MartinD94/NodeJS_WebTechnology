@@ -28,9 +28,9 @@ function populateTable() {
 
     // jQuery AJAX call for JSON
     $.getJSON( '/users/userlist', function( data ) {
-	userListData = data;
+	userListData = data.sort();
         // For each item in our JSON, add a table row and cells to the content string
-        $.each(data, function(){
+        $.each(data.sort(), function(){
             tableContent += '<tr>';
             tableContent += '<td><a href="#" class="linkshowuser" rel="' + this.username + '">' + this.username + '</a></td>';
             tableContent += '<td><a href="mailto:' + this.email + '">' + this.email + '</a></td>';
