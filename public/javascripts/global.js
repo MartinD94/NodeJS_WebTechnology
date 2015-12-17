@@ -29,7 +29,12 @@ function populateTable() {
     // jQuery AJAX call for JSON
     $.getJSON( '/users/userlist', function( data ) {
 	userListData = data
-	userListData = userListData.sort();
+	function compare(el1, el2, index) {
+  	return el1[index] == el2[index] ? 0 : (el1[index] < el2[index] ? -1 : 1);
+	}
+	userListData.sort(function(el1,el2){
+  	return compare(el1, el2, "username");
+	});
         // For each item in our JSON, add a table row and cells to the content string
         $.each(userListData/*data*/, function(){
             tableContent += '<tr>';
