@@ -1,7 +1,8 @@
 body {
   padding: 30px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image: url(../images/background01.jpg)
+  background-image: url(../images/background01.jpg);
+  color: #FFFFFF;
 }
 
 h2 {
@@ -100,8 +101,8 @@ fieldset {
 }
 
 #btnAddUser {
-	width: 75px;
-	height: 20px;
+	width: auto;
+	height: auto;
 	margin: auto;
 	margin-top: 5px;
 	padding: 5px 10px;
