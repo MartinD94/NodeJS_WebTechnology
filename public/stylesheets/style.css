@@ -26,6 +26,7 @@ a:hover {
 
 #userList {
 	margin:0 0 30px 0;
+	color: #000000;
 }
 	#userList table {
 		border-collapse:separate;
