@@ -149,6 +149,11 @@ function deleteUser(event) {
 
             // Update the table
             populateTable();
+			//Populate Info Box
+    		$('#userInfoName').text();
+	    	$('#userInfoAge').text();
+    		$('#userInfoGender').text();
+    		$('#userInfoLocation').text();
 
         });
 
