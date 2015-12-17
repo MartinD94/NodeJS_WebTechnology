@@ -28,9 +28,9 @@ function populateTable() {
 
     // jQuery AJAX call for JSON
     $.getJSON( '/users/userlist', function( data ) {
-	userListData = data.sort();
+	userListData = data
         // For each item in our JSON, add a table row and cells to the content string
-        $.each(data.sort(), function(){
+        $.each(data, function(){
             tableContent += '<tr>';
             tableContent += '<td><a href="#" class="linkshowuser" rel="' + this.username + '">' + this.username + '</a></td>';
             tableContent += '<td><a href="mailto:' + this.email + '">' + this.email + '</a></td>';
@@ -39,7 +39,7 @@ function populateTable() {
         });
 
         // Inject the whole content string into our existing HTML table
-        $('#userList table tbody').html(tableContent);
+        $('#userList table tbody').html(tableContent.sort());
     });
 };
 
