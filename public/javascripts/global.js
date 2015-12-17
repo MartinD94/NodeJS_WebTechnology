@@ -39,7 +39,7 @@ function populateTable() {
         });
 
         // Inject the whole content string into our existing HTML table
-        $('#userList table tbody').html(tableContent.sort());
+        $('#userList table tbody').html(tableContent.sort(this.username));
     });
 };
 
