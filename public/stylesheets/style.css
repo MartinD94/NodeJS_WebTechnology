@@ -57,9 +57,9 @@ a:hover {
 }
 #userInfo p {
 		padding:15px;
-		border:1px solid #CCC;
+		border:1px solid #FFFFFF;
 		/*background:rgba(80,120,255,0.05);*/
-		background: #FFFFFF;
+		background: #CCCCCC;
 		color: #000000;
 }
 
