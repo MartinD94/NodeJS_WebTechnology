@@ -77,7 +77,6 @@ fieldset {
     text-shadow: 0px -2px #2980B9;
 	font-size: 14px;
 	font-weight: bold;
-	/*text-decoration: none;*/
     /* Animation */
     transition: all 0.1s;
     -webkit-transition: all 0.1s;
@@ -86,11 +85,42 @@ fieldset {
 .linkdeleteuser:hover, 
 .linkdeleteuser:focus {
 	text-decoration: none;
-    color: #fff;
+    /*color: #fff;*/
 }
 
 .linkdeleteuser:active {
 	text-decoration: none;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+
+#btnAddUser {
+	width: 70px;
+	height: 3px;
+	margin: auto;
+	padding: 1px 10px;
+	background-color:#00FF00;
+	text-align: center;
+    border-radius: 10px;
+    color: #FFF;
+    background-color: #3498DB;
+    border-bottom: 3px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+	font-size: 14px;
+	font-weight: bold;
+    /* Animation */
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+/*#btnAddUser:hover,
+#btnAddUser:focus {
+	text-decoration: none;
+ 	color: #fff;
+}*/
+
+#btnAddUser:active {
     transform: translate(0px,5px);
     -webkit-transform: translate(0px,5px);
     border-bottom: 1px solid;
