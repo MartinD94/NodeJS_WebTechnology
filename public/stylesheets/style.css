@@ -56,3 +56,35 @@ fieldset {
 	border:0;
 	padding:0; margin:0;
 }
+
+.linkdeleteuser{
+		width: 130px;
+	height: 20px;
+	margin: auto;
+	margin-top: 5px;
+	padding: 10px 40px;
+	background-color:#00FF00;
+	text-align: center;
+    border-radius: 10px;
+    color: #FFF;
+    background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+	font-size: 25px;
+	font-weight: bold;
+    /* Animation */
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.linkdeleteuser:hover, 
+.linkdeleteuser:focus {
+	text-decoration: none;
+    color: #fff;
+}
+
+.linkdeleteuser:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
