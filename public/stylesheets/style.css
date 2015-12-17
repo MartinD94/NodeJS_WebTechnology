@@ -61,14 +61,14 @@ fieldset {
 	width: 70px;
 	height: 3px;
 	margin: auto;
-	margin-top: -10px;
-	padding: 1px 40px;
+	/*margin-top: -10px;
+	padding: 1px 40px;*/
 	background-color:#00FF00;
 	text-align: center;
     border-radius: 10px;
     color: #FFF;
     background-color: #3498DB;
-    border-bottom: 5px solid #2980B9;
+    border-bottom: 3px solid #2980B9;
     text-shadow: 0px -2px #2980B9;
 	font-size: 14px;
 	font-weight: bold;
