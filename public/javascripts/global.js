@@ -111,6 +111,11 @@ function addUser(event) {
 
                 // Update the table
                 populateTable();
+				//Populate Info Box
+    			$('#userInfoName').text($('#addUser fieldset input#inputUserFullname').val());
+			    $('#userInfoAge').text($('#addUser fieldset input#inputUserAge').val());
+    			$('#userInfoGender').text($('#addUser fieldset input#inputUserGender').val());
+			    $('#userInfoLocation').text($('#addUser fieldset input#inputUserLocation').val());
 
             }
             else {
