@@ -1,6 +1,7 @@
 body {
   padding: 30px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url(../images/background01.jpg)
 }
 
 h2 {
@@ -82,10 +83,13 @@ fieldset {
     -webkit-transition: all 0.1s;
 }
 
-.linkdeleteuser:hover, 
-.linkdeleteuser:focus {
+.linkdeleteuser:hover {
 	text-decoration: none;
     color: #000000;
+}
+
+.linkdeleteuser:focus {
+	text-decoration: none;
 }
 
 .linkdeleteuser:active {
@@ -96,11 +100,11 @@ fieldset {
 }
 
 #btnAddUser {
-	width: auto;
-	height: auto;
+	width: 75px;
+	height: 20px;
 	margin: auto;
 	margin-top: 5px;
-	padding: 10px 40px;
+	padding: 5px 10px;
 	background-color:#00FF00;
 	text-align: center;
     border-radius: 10px;
@@ -115,8 +119,7 @@ fieldset {
     -webkit-transition: all 0.1s;
 }
 
-#btnAddUser:hover,
-#btnAddUser:focus {
+#btnAddUser:hover {
  	color: #000000;
 }
 
