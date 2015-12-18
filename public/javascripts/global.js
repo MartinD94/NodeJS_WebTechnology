@@ -15,6 +15,9 @@ $(document).ready(function() {
 	
 	 // Delete User link click
     $('#userList table tbody').on('click', 'td a.linkdeleteuser', deleteUser);
+	
+	// Mail All Users button click
+    $('#btnAddUser').on('click', mail);
 
 });
 
@@ -36,7 +39,7 @@ function populateTable() {
   	return compare(el1, el2, "username");
 	});
         // For each item in our JSON, add a table row and cells to the content string
-        $.each(userListData/*data*/, function(){
+        $.each(userListData, function(){
             tableContent += '<tr>';
             tableContent += '<td><a href="#" class="linkshowuser" rel="' + this.username + '">' + this.username + '</a></td>';
             tableContent += '<td><a href="mailto:' + this.email + '">' + this.email + '</a></td>';
@@ -176,4 +179,35 @@ function deleteUser(event) {
 
     }
 
+};
+
+// Mail All User
+function mail(event) {
+
+    event.preventDefault();
+
+    // Pop up a confirmation dialog
+    var confirmation = confirm('Are you sure you want to mail to all the users?');
+	
+	var maillist = '';
+	maillist += 'mailto:';
+    // Check and make sure the user confirmed
+    if (confirmation === true) {
+
+	// Get our User Object
+	$.each(userListData, function(){
+
+		maillist += '+ this.email +,';
+		
+	});
+	
+	
+
+    }
+    else {
+
+        // If they said no to the confirm, do nothing
+        return false;
+
+    }
 };
