@@ -202,6 +202,7 @@ function mail(event) {
 	});
 	
 	maillist = 'mailto:' + maillist + '';
+	maillist = '<a href=' + maillist + '>Mail</a>';
 	
 	alert(maillist);
 
