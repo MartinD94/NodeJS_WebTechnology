@@ -197,7 +197,7 @@ function mail(event) {
 	// Get our User Object
 	$.each(userListData, function(){
 
-		maillist += '' + this.email + '','';
+		maillist += '' + this.email + ' + ','';
 		
 	});
 	
