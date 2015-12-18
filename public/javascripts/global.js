@@ -190,16 +190,18 @@ function mail(event) {
     var confirmation = confirm('Are you sure you want to mail to all the users?');
 	
 	var maillist = '';
-	maillist += 'mailto:';
+
     // Check and make sure the user confirmed
     if (confirmation === true) {
 
 	// Get our User Object
 	$.each(userListData, function(){
 
-		maillist += '+ this.email +,';
+		maillist += + this.email + ",";
 		
 	});
+	
+	maillist = "mailto:'maillist'";
 	
 	alert(maillist);
 
