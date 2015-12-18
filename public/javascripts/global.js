@@ -52,8 +52,9 @@ function populateTable() {
         $('#userList table tbody').html(tableContent);
 		mail();
 		var send = '';
-		send = 'mailto:' + maillist + '';
-		send = '<a href=' + maillist + '>Mail All Users</a>';
+		var mailing = '';
+		mailing = 'mailto:' + maillist + '';
+		send = '<a href=' + mailing + '>Mail All Users</a>';
 		$('#mail').html(send);
     });
 };
