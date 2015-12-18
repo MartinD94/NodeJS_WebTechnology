@@ -132,7 +132,7 @@ fieldset {
     border-bottom: 1px solid;
 }
 
-#mail {
+#mail a{
 	width: 100px;
 	height: auto;
 	margin: auto;
@@ -154,12 +154,12 @@ fieldset {
     -webkit-transition: all 0.1s;
 }
 
-#mail:hover {
+#mail a:hover {
  	color: #000000;
 	text-decoration: none;
 }
 
-#mail:active {
+#mail a:active {
 	text-decoration: none;
     transform: translate(0px,5px);
     -webkit-transform: translate(0px,5px);
