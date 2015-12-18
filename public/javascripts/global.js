@@ -201,7 +201,7 @@ function mail(event) {
 		
 	});
 	
-	maillist = "mailto:'maillist'";
+	//maillist = mailto: maillist;
 	
 	alert(maillist);
 
