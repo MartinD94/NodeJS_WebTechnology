@@ -191,14 +191,8 @@ function deleteUser(event) {
 // Maillist All User
 function mail() {
 
-    //event.preventDefault();
-
-    // Pop up a confirmation dialog
-    //var confirmation = confirm('Are you sure you want to mail to all the users?');
-
-    // Check and make sure the user confirmed
-    //if (confirmation === true) {
-
+	maillist = '';
+	
 	// Get our User Object
 	$.each(userListData, function(){
 
