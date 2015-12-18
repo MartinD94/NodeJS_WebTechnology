@@ -18,7 +18,7 @@ $(document).ready(function() {
     $('#userList table tbody').on('click', 'td a.linkdeleteuser', deleteUser);
 	
 	// Mail All Users button click
-    $('#mail').on('click', mail);
+    //$('#mail').on('click', mail);
 
 });
 
@@ -203,7 +203,7 @@ function mail() {
 	});
 	
 	maillist = 'mailto:' + maillist + '';
-	maillist = '<a href=' + maillist + '>Mail</a>';
+	//maillist = '<a href=' + maillist + '>Mail</a>';
 	//'<td><a href="mailto:' + this.email + '">' + this.email + '</a></td>'
 	
 	alert(maillist);
