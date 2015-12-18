@@ -1,5 +1,6 @@
 // Userlist data array for filling in info box
 var userListData = [];
+var maillist = '';
 
 // DOM Ready =============================================================
 $(document).ready(function() {
@@ -49,6 +50,8 @@ function populateTable() {
 
         // Inject the whole content string into our existing HTML table
         $('#userList table tbody').html(tableContent);
+		mail();
+		S('#mail').html(maillist);
     });
 };
 
@@ -181,18 +184,16 @@ function deleteUser(event) {
 
 };
 
-// Mail All User
-function mail(event) {
+// Maillist All User
+function mail() {
 
-    event.preventDefault();
+    //event.preventDefault();
 
     // Pop up a confirmation dialog
-    var confirmation = confirm('Are you sure you want to mail to all the users?');
-	
-	var maillist = '';
+    //var confirmation = confirm('Are you sure you want to mail to all the users?');
 
     // Check and make sure the user confirmed
-    if (confirmation === true) {
+    //if (confirmation === true) {
 
 	// Get our User Object
 	$.each(userListData, function(){
@@ -205,13 +206,14 @@ function mail(event) {
 	maillist = '<a href=' + maillist + '>Mail</a>';
 	//'<td><a href="mailto:' + this.email + '">' + this.email + '</a></td>'
 	
-	alert(maillist.html());
+	alert(maillist);
+	return maillist;
 
-    }
-    else {
+    //}
+    /*else {
 
         // If they said no to the confirm, do nothing
         return false;
 
-    }
+    }*/
 };
