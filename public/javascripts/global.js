@@ -203,8 +203,9 @@ function mail(event) {
 	
 	maillist = 'mailto:' + maillist + '';
 	maillist = '<a href=' + maillist + '>Mail</a>';
+	//'<td><a href="mailto:' + this.email + '">' + this.email + '</a></td>'
 	
-	alert(maillist);
+	alert(maillist.toHTML());
 
     }
     else {
