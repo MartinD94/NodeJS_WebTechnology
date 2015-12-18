@@ -51,7 +51,7 @@ function populateTable() {
         // Inject the whole content string into our existing HTML table
         $('#userList table tbody').html(tableContent);
 		mail();
-		S('#mail').html(maillist);
+		$('#mail').html(maillist);
     });
 };
 
