@@ -205,7 +205,7 @@ function mail(event) {
 	maillist = '<a href=' + maillist + '>Mail</a>';
 	//'<td><a href="mailto:' + this.email + '">' + this.email + '</a></td>'
 	
-	alert($.parseHTML(maillist));
+	alert($.parseHTML('<a href=' + maillist + '>Mail</a>'));
 
     }
     else {
