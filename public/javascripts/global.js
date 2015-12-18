@@ -201,7 +201,7 @@ function mail(event) {
 		
 	});
 	
-	
+	alert(maillist);
 
     }
     else {
