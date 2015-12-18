@@ -17,7 +17,7 @@ $(document).ready(function() {
     $('#userList table tbody').on('click', 'td a.linkdeleteuser', deleteUser);
 	
 	// Mail All Users button click
-    $('#btnAddUser').on('click', mail);
+    $('#mail').on('click', mail);
 
 });
 
