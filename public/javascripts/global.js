@@ -51,7 +51,10 @@ function populateTable() {
         // Inject the whole content string into our existing HTML table
         $('#userList table tbody').html(tableContent);
 		mail();
-		$('#mail').html(maillist);
+		var send = '';
+		send = 'mailto:' + maillist + '';
+		send = '<a href=' + maillist + '>Mail All Users</a>';
+		$('#mail').html(send);
     });
 };
 
@@ -202,12 +205,11 @@ function mail() {
 		
 	});
 	
-	maillist = 'mailto:' + maillist + '';
-	maillist = '<a href=' + maillist + '>Mail All Users</a>';
+	/*maillist = 'mailto:' + maillist + '';
+	maillist = '<a href=' + maillist + '>Mail All Users</a>';*/
 	//'<td><a href="mailto:' + this.email + '">' + this.email + '</a></td>'
 	
 	alert(maillist);
-	return maillist;
 
     //}
     /*else {
