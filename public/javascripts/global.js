@@ -1,5 +1,6 @@
 // Userlist data array for filling in info box
 var userListData = [];
+// Maillist array with all user e-mails. Needed for the "Mail All Users" button
 var maillist = '';
 
 // DOM Ready =============================================================
@@ -200,17 +201,4 @@ function mail() {
 		
 	});
 	
-	/*maillist = 'mailto:' + maillist + '';
-	maillist = '<a href=' + maillist + '>Mail All Users</a>';*/
-	//'<td><a href="mailto:' + this.email + '">' + this.email + '</a></td>'
-	
-	alert(maillist);
-
-    //}
-    /*else {
-
-        // If they said no to the confirm, do nothing
-        return false;
-
-    }*/
 };
